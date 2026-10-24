@@ -146,9 +146,9 @@
     start();
   }
 
-  /* Hero: name rises, record lines tick in, then the CLOSED stamp lands once */
+  /* Hero: name rises, identity record attributes tick in, then the Active status appears */
   function hero() {
-    const steps = $$(".record .step"), stamp = $(".stamp");
+    const steps = $$(".record .step"), stamp = $(".state");
     requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add("ready")));
     if (reduced) {
       steps.forEach((s) => s.classList.add("done"));
